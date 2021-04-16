@@ -9,8 +9,6 @@
  *               1 Power failure Detection Input,
  *               3*2 Keypad, 
  *               128*64 Graphic LCD 
- * 
- * 
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -39,8 +37,8 @@ static void ScreenUpdateEventHandler( void );
 
 //static RTCC_DATETIME time;
 //static RTCC_DATETIME lastTime = {0};
-static volatile bool toggleBlinkAlive = false;
-static volatile bool allowScreenUpdate = true;
+//static volatile bool toggleBlinkAlive = false;
+//static volatile bool allowScreenUpdate = true;
 
 #define MEMCMP_VALUES_IDENTICAL 0
 
@@ -250,11 +248,11 @@ int main ( void )
 
 static void BlinkAliveEventHandler(void)
 {    
-    toggleBlinkAlive = true;
+//    toggleBlinkAlive = true;
 }
 
 static void ScreenUpdateEventHandler(void)
 {
-    allowScreenUpdate = true;
+//    allowScreenUpdate = true;
 }
 
