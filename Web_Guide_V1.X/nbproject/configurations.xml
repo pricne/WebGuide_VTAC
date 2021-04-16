@@ -12,8 +12,11 @@
         <itemPath>bsp/lcd.h</itemPath>
         <itemPath>bsp/adc.h</itemPath>
         <itemPath>bsp/Digital_Output.h</itemPath>
+        <itemPath>bsp/keypad.h</itemPath>
       </logicalFolder>
       <itemPath>io_mapping.h</itemPath>
+      <itemPath>generic.h</itemPath>
+      <itemPath>delay.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -31,6 +34,7 @@
         <itemPath>bsp/lcd_printf.c</itemPath>
         <itemPath>bsp/timer_1ms.c</itemPath>
         <itemPath>bsp/Digital_Output.c</itemPath>
+        <itemPath>bsp/keypad.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
       <itemPath>system.c</itemPath>
@@ -312,6 +316,7 @@
         <property key="ToolFirmwareFilePath"
                   value="Press to browse for a specific firmware version"/>
         <property key="ToolFirmwareOption.UseLatestFirmware" value="true"/>
+        <property key="firmware.download.all" value="false"/>
         <property key="memories.configurationmemory" value="true"/>
         <property key="memories.dataflash" value="true"/>
         <property key="memories.eeprom" value="true"/>

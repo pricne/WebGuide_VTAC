@@ -25,7 +25,10 @@
 #include "bsp/Digital_Output.h"
  
 #include "io_mapping.h"
-//jhjhjhkjhkhkjhkn
+#include "delay.h"
+#include "generic.h"
+
+//
 // *****************************************************************************
 // *****************************************************************************
 // Section: File Scope Variables and Functions
@@ -111,7 +114,7 @@ int main ( void )
     
     while ( 1 )
     {
-        LED_Off( FRD );
+        LED_On( FRD );
 //        LED_On( REV );
 //        LED_On( Limit1 );
 //        LED_On( Limit2 );
